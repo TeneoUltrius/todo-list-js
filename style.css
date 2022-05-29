@@ -62,11 +62,6 @@ body {
     justify-content: space-between;
 }
 
-#add-item h5 {
-    font-size: .9em;
-    font-weight: 400;
-}
-
 #item-input {
     color: var(--data-text-color);
     width: 83%;
@@ -74,7 +69,7 @@ body {
     font-size: 1.2em;
     border-radius: 5px;
     padding: 10px;
-    background-color: var(--background-color);    
+    background-color: #FFF;    
     box-shadow: none;
     border: none;
 }
@@ -83,7 +78,7 @@ input:focus {
     outline: none;
 }
 
-#add-item button {
+#addBtn {
     color: #FFF;
     font-weight: 600;
     width: 15%;
@@ -92,11 +87,11 @@ input:focus {
     padding: 5px 5px;
     box-shadow: none;
     border: none;
-    background-color: var(--secondary-color);
+    background-color: var(--highlight-primary-color);
 }
 
-#add-item button:hover {
-    background-color: var(--highlight-primary-color);
+#addBtn:hover {
+    background-color: var(--highlight-secondary-color);
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
@@ -130,7 +125,7 @@ input:focus {
     transition: background-color 0.5s ease;
 }
 
-.item button {
+.btn-done {
     color: #FFF;
     font-weight: 600;
     font-size: 1em;
@@ -142,7 +137,7 @@ input:focus {
     background-color: var(--highlight-primary-color);
 }
 
-.item button:hover {
+.btn-done:hover {
     background-color: var(--highlight-secondary-color);
     cursor: pointer;
     transition: 0.2s ease-in-out;
@@ -157,11 +152,11 @@ input:focus {
     border-radius: 5px;
     box-shadow: none;
     border: none;
-    background-color: var(--secondary-color);
+    background-color: var(--highlight-primary-color);
 }
 
 #clearAll:hover {
-    background-color: var(--highlight-primary-color);
+    background-color: var(--highlight-secondary-color);
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
