@@ -20,7 +20,7 @@ font-family: 'Mukta', sans-serif;*/
     --secondary-color: #E0BBE4;
     --highlight-primary-color: #D291BC;
     --highlight-secondary-color: #FEC8D8;
-    --data-text-color: rgb(51, 51, 51);
+    --data-text-color: rgb(69, 69, 69);
 }
 
 body {
@@ -29,20 +29,21 @@ body {
 
 #container {
     width: 70%;
-    max-width: 500px;
-    padding: 20px;
+    max-width: 525px;
+    padding: 30px;
     margin: 40px auto;
     color: #FFF;
     background-color: var(--primary-color);
     font-family: 'Mukta', sans-serif;
     border-radius: 12px;
-    text-align: center;
+    transition: all 0.5s ease;
 }
 
 #header {
-    width: 90%;
-    margin: 10px auto;
-    text-align: left;
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    justify-content: space-between;
 }
 
 #header h4 {
@@ -50,14 +51,15 @@ body {
 }
 
 #header h5 {
-    font-size: 1em;
+    font-size: .9em;
     font-weight: 100;
 }
 
 #add-item {
-    margin: 30px auto;
-    width: 90%;
-    text-align: left;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: space-between;
 }
 
 #add-item h5 {
@@ -67,12 +69,11 @@ body {
 
 #item-input {
     color: var(--data-text-color);
-    width: 75%;
+    width: 83%;
     font-weight: 600;
     font-size: 1.2em;
     border-radius: 5px;
-    margin: 5px auto;
-    padding: 5px 10px;
+    padding: 10px;
     background-color: var(--background-color);    
     box-shadow: none;
     border: none;
@@ -85,10 +86,9 @@ input:focus {
 #add-item button {
     color: #FFF;
     font-weight: 600;
-    width: 23%;
+    width: 15%;
     font-size: 1.2em;
     border-radius: 5px;
-    margin: 5px auto;
     padding: 5px 5px;
     box-shadow: none;
     border: none;
@@ -103,16 +103,18 @@ input:focus {
 
 #todo-items {
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     text-align: left;
 }
 
 .item {
+    height: auto;
     margin: 10px auto;
     border-radius: 5px;
     padding: 8px 10px;
     background-color: var(--secondary-color);
     text-align: justify;
+    transition: height 0.5s ease;
 }
 
 .item-text {
@@ -125,6 +127,7 @@ input:focus {
     text-decoration: line-through;
     color: var(--highlight-primary-color);
     background-color: var(--highlight-primary-color);
+    transition: background-color 0.5s ease;
 }
 
 .item button {
@@ -132,7 +135,7 @@ input:focus {
     font-weight: 600;
     font-size: 1em;
     border-radius: 5px;
-    margin: 0px auto;
+    margin-right: 7px;
     padding: 5px 5px;
     box-shadow: none;
     border: none;
@@ -146,12 +149,12 @@ input:focus {
 }
 
 #clearAll {
+    width: 20%;
+    padding: 8px;
     color: #FFF;
     font-weight: 600;
-    font-size: 1em;
+    font-size: 1.2em;
     border-radius: 5px;
-    margin: 0px auto;
-    padding: 5px 5px;
     box-shadow: none;
     border: none;
     background-color: var(--secondary-color);
@@ -161,4 +164,16 @@ input:focus {
     background-color: var(--highlight-primary-color);
     cursor: pointer;
     transition: 0.2s ease-in-out;
+}
+
+.invisible {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+::placeholder {
+    color: var(--highlight-primary-color);
 }

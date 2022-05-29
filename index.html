@@ -12,24 +12,19 @@
     <div id="container">
         <header id="header">
             <h4>TODO LIST</h4>
-            <h5>Get your things done</h5>
+            <div id="description">
+                <h5>Add items to your list.</h5>
+                <h5>Get your things done.</h5>
+            </div>
         </header>
         <section id="add-item">
-            <h5>Add items to list</h5>
-                <input id="item-input" type="text">
-                <button id="addBtn" type="button" onclick="AddItem()">ADD</button>
+            
+                <input id="item-input" type="text" maxlength="45">
+                <button id="addBtn" type="submit" onclick="AddItem()">ADD</button>
         </section>
         <section id="todo-items">
-            <!--<div class="item">
-                <button class="btn-done" type="button" onclick="markDone()">DONE</button>
-                <span class="item-text" >TEXT</span>
-            </div>
-            <div class="item item-done">
-                <button class="btn-done" type="button" onclick="markDone()">DONE</button>
-                <span class="item-text" >TEXT</span>
-            </div>-->
         </section>
-        <button id="clearAll" type="button" onclick="clearAllItems()">CLEAR</button>
+        <button id="clearAll" class="invisible" type="button" onclick="clearAll()">CLEAR</button>
     </div>
 </body>
 </html>
