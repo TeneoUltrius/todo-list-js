@@ -1,0 +1,164 @@
+/* RESET CSS */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Mukta&display=swap');
+/*font-family: 'Akshar', sans-serif;
+font-family: 'Mukta', sans-serif;*/
+
+/* MAIN STYLES */
+
+:root {
+    --background-color: #FFDFD3;
+    --primary-color: #957DAD;
+    --secondary-color: #E0BBE4;
+    --highlight-primary-color: #D291BC;
+    --highlight-secondary-color: #FEC8D8;
+    --data-text-color: rgb(51, 51, 51);
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+#container {
+    width: 70%;
+    max-width: 500px;
+    padding: 20px;
+    margin: 40px auto;
+    color: #FFF;
+    background-color: var(--primary-color);
+    font-family: 'Mukta', sans-serif;
+    border-radius: 12px;
+    text-align: center;
+}
+
+#header {
+    width: 90%;
+    margin: 10px auto;
+    text-align: left;
+}
+
+#header h4 {
+    font-size: 1.8em;
+}
+
+#header h5 {
+    font-size: 1em;
+    font-weight: 100;
+}
+
+#add-item {
+    margin: 30px auto;
+    width: 90%;
+    text-align: left;
+}
+
+#add-item h5 {
+    font-size: .9em;
+    font-weight: 400;
+}
+
+#item-input {
+    color: var(--data-text-color);
+    width: 75%;
+    font-weight: 600;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin: 5px auto;
+    padding: 5px 10px;
+    background-color: var(--background-color);    
+    box-shadow: none;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+#add-item button {
+    color: #FFF;
+    font-weight: 600;
+    width: 23%;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin: 5px auto;
+    padding: 5px 5px;
+    box-shadow: none;
+    border: none;
+    background-color: var(--secondary-color);
+}
+
+#add-item button:hover {
+    background-color: var(--highlight-primary-color);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+#todo-items {
+    margin: 0 auto;
+    width: 90%;
+    text-align: left;
+}
+
+.item {
+    margin: 10px auto;
+    border-radius: 5px;
+    padding: 8px 10px;
+    background-color: var(--secondary-color);
+    text-align: justify;
+}
+
+.item-text {
+    font-weight: 600;
+    color: var(--data-text-color);
+}
+
+.item-done {
+    text-decoration-color: var(--data-text-color) !important;
+    text-decoration: line-through;
+    color: var(--highlight-primary-color);
+    background-color: var(--highlight-primary-color);
+}
+
+.item button {
+    color: #FFF;
+    font-weight: 600;
+    font-size: 1em;
+    border-radius: 5px;
+    margin: 0px auto;
+    padding: 5px 5px;
+    box-shadow: none;
+    border: none;
+    background-color: var(--highlight-primary-color);
+}
+
+.item button:hover {
+    background-color: var(--highlight-secondary-color);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+#clearAll {
+    color: #FFF;
+    font-weight: 600;
+    font-size: 1em;
+    border-radius: 5px;
+    margin: 0px auto;
+    padding: 5px 5px;
+    box-shadow: none;
+    border: none;
+    background-color: var(--secondary-color);
+}
+
+#clearAll:hover {
+    background-color: var(--highlight-primary-color);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
