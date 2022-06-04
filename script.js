@@ -1,13 +1,12 @@
 let itemsCounter = 0; //For appear clearAll button
 
-function AddItem() {
+function addItem() {
 
     if (document.getElementById('item-input').value.length == 0) {
         document.getElementById('item-input').setAttribute('placeholder', 'Type your text here');
     } else {
         document.getElementById('item-input').setAttribute('placeholder', '')    
 
-        let input = document.getElementById('item-input');
         let newItem = document.getElementById('item-input').value;
         let itemDiv = document.createElement('div');
         itemDiv.classList.add('item');
