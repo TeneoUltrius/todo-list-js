@@ -11,8 +11,8 @@ function addItem() {
         let itemDiv = document.createElement('div');
         itemDiv.classList.add('item');
         itemDiv.innerHTML = `
-                <button class="btn-done" type="button">DONE</button>
-                <span class="item-text" >${newItem}</span>`;
+                <div class="item-text"><span>${newItem}</span></div>
+                <button class="btn-done" type="button"><i class="icofont-verification-check"></i></button>`;
 
         document.getElementById('todo-items').append(itemDiv);
 

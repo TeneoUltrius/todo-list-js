@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icofont.min.css">
     <script src="script.js" type="text/javascript"></script>
     <title>TODO List</title>
 </head>
@@ -18,12 +19,12 @@
             </div>
         </header>
         <section id="add-item">
-            <input id="item-input" type="text" maxlength="45">
-            <button id="addBtn" type="button" onclick="addItem()">ADD</button>   
+            <input id="item-input" type="text" maxlength="33">
+            <button id="addBtn" type="button" onclick="addItem()"><i class="icofont-ui-add"></i></button>   
         </section>
         <section id="todo-items">
         </section>
-        <button id="clearAll" class="invisible" type="button" onclick="clearAll()">CLEAR</button>
+        <button id="clearAll" class="invisible" type="button" onclick="clearAll()"><i class="icofont-ui-delete"></i></button>
     </div>
 </body>
 </html>
