@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="icofont.min.css">
-    <script src="script.js" type="text/javascript"></script>
-    <title>TODO List</title>
+    <title>TODO LIST</title>
 </head>
 <body>
     <div id="container">
@@ -19,12 +18,15 @@
             </div>
         </header>
         <section id="add-item">
-            <input id="item-input" type="text" maxlength="33">
+            <input id="item-input" type="text" maxlength="100" placeholder="Type your text here" autofocus onkeyup="sizeFont()">
             <button id="addBtn" type="button" onclick="addItem()"><i class="icofont-ui-add"></i></button>   
         </section>
-        <section id="todo-items">
+        <section id="todo-items"></section>
+        <section id="clear-items" class="hide">
+            <button id="clearAll" type="button" onclick="clearAll()"><i class="icofont-ui-delete"></i></button> 
+            <span>Clear all</span>
         </section>
-        <button id="clearAll" class="invisible" type="button" onclick="clearAll()"><i class="icofont-ui-delete"></i></button>
     </div>
 </body>
+<script src="script.js" type="text/javascript"></script>
 </html>
