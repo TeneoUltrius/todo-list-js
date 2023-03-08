@@ -133,6 +133,10 @@ input.required::placeholder {
 .item-text {
     font-weight: 600;
     word-wrap: break-word;
+    overflow-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
     font-size: 1.2em;
     width: 88%;
     min-height: 40px;
@@ -141,7 +145,6 @@ input.required::placeholder {
     border-radius: 5px;
     padding: 8px;
     background-color: var(--secondary-color);
-    text-align: justify;
 }
 
 .item-done .item-text {
